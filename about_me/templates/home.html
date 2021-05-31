@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div style="background-color: black">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 align-self-center">
+                <div id="logo">
+                    <img src="../static/img/2.png" height="450px">
+                </div>
+
+            </div>
+            <div class="col-lg-6 align-self-center" style="font-family: Norwester">
+                <div class="container" style="color: white; background-color: black; font-family:helvetica">
+                    <div class="row">
+                        <div class="col">
+                            <a href="{% url 'about_index' %}">
+                                <div class="row align-items-center border_and_shadow">
+                                    <img src="../static/img/Thunderbolts.gif" height="50px">
+                                    <p class="h6">01. Who am I?</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'project_index' %}">
+                                <div class="row align-items-center border_and_shadow">
+                                    <img src="../static/img/Thunderbolts.gif" height="50px">
+                                    <p class="h6">02. What I have done?</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="w-100" style="height:1rem;"></div>
+                        <div class="col">
+                            <a href="https://github.com/theRealNoah">
+                                <div class="row align-items-center border_and_shadow ">
+                                    <img src="../static/img/Thunderbolts.gif" height="50px">
+                                    <p class="h6">03. Github</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col">
+                            <a href="https://www.linkedin.com/in/noah--hamilton/">
+                                <div class="row align-items-center border_and_shadow">
+                                    <img src="../static/img/Thunderbolts.gif" height="50px">
+                                    <p class="h6">04. LinkedIn</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
