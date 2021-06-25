@@ -20,5 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('projects/', include("projects.urls")),
     path("blog/", include("blog.urls")),
+    path("journey/", include("timeline.urls")),
+    path("pdhelp/", include("pdhelp.urls")),
     path("", include("about_me.urls"))
 ]
